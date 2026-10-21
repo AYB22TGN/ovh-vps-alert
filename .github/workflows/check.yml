@@ -1,8 +1,9 @@
 name: OVH VPS stock
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
+  # Surveillance arrêtée le 21 oct. 2026 (VPS commandé). Pour la relancer, remettre :
+  # schedule:
+  #   - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
       test_telegram:
