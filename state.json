@@ -1,1 +1,32 @@
-{}
+{
+  "vps-2027-model2": {
+    "eu-central-waw": {
+      "name": "WAW",
+      "status": "out-of-stock"
+    },
+    "eu-south-mil": {
+      "name": "EU-SOUTH-MIL",
+      "status": "out-of-stock"
+    },
+    "eu-west-eri": {
+      "name": "UK",
+      "status": "out-of-stock"
+    },
+    "eu-west-gra": {
+      "name": "GRA",
+      "status": "out-of-stock"
+    },
+    "eu-west-lim": {
+      "name": "DE",
+      "status": "out-of-stock"
+    },
+    "eu-west-rbx": {
+      "name": "EU-WEST-RBX",
+      "status": "out-of-stock"
+    },
+    "eu-west-sbg": {
+      "name": "SBG",
+      "status": "out-of-stock"
+    }
+  }
+}
