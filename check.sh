@@ -27,6 +27,11 @@ send_telegram() {
     --data-urlencode "disable_web_page_preview=true" > /dev/null
 }
 
+if [[ "${TEST_TELEGRAM:-0}" == "1" ]]; then
+  send_telegram "✅ <b>ovh-vps-alert</b> : test depuis GitHub Actions, les secrets fonctionnent."
+  echo "Message de test envoyé"
+fi
+
 plans=$(grep -vE '^\s*(#|$)' "$PLANS_FILE" | tr -d '[:blank:]\r')
 state=$(cat "$STATE_FILE")
 

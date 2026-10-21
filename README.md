@@ -22,6 +22,10 @@ gh secret set TG_TOKEN -R <owner>/ovh-vps-alert
 gh secret set TG_CHAT  -R <owner>/ovh-vps-alert
 ```
 
+## Tester Telegram
+
+Onglet Actions → « OVH VPS stock » → Run workflow, cocher « Envoyer un message Telegram de test ».
+
 ## Test local
 
 ```bash

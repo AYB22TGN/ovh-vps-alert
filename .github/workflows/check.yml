@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "*/5 * * * *"
   workflow_dispatch:
+    inputs:
+      test_telegram:
+        description: "Envoyer un message Telegram de test"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -23,6 +28,7 @@ jobs:
         env:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           TG_CHAT: ${{ secrets.TG_CHAT }}
+          TEST_TELEGRAM: ${{ inputs.test_telegram && '1' || '0' }}
         run: ./check.sh
 
       - name: Commiter state.json si modifié

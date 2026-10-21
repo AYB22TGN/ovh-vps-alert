@@ -10,11 +10,11 @@
     },
     "eu-west-eri": {
       "name": "UK",
-      "status": "out-of-stock"
+      "status": "available"
     },
     "eu-west-gra": {
       "name": "GRA",
-      "status": "out-of-stock"
+      "status": "available"
     },
     "eu-west-lim": {
       "name": "DE",
